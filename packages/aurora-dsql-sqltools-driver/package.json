@@ -1,0 +1,75 @@
+{
+  "name": "sqltools-driver-dsql",
+  "displayName": "Aurora DSQL",
+  "description": "Aurora DSQL",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "publisher": "todo",
+  "license": "Apatche 2.0",
+  "repository": {
+    "type": "git",
+    "url": "todo"
+  },
+  "bugs": {},
+  "keywords": [
+    "dsql",
+    "sqltools-driver",
+    "Aurora DSQL"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "extensionDependencies": [
+    "mtxr.sqltools"
+  ],
+  "activationEvents": [
+    "*",
+    "onLanguage:sql",
+    "onCommand:sqltools.*"
+  ],
+  "main": "./out/src/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "watch:ext": "tsc -watch -p ./ --preserveWatchOutput",
+    "watch:ls": "tsc -watch -p ./ --preserveWatchOutput",
+    "clean": "rm -rf out dist *.vsix",
+    "test": "npm run compile && npm run run-test",
+    "test:unit": "npm run compile && TEST_SUITE=unit node ./out/test/runTest.js",
+    "test:integration": "npm run compile && TEST_SUITE=integration node ./out/test/runTest.js",
+    "run-test": "node ./out/test/runTest.js",
+    "test-with-sqltools": "npm run compile && node ./out/test/runTestWithSQLTools.js",
+    "lint": "eslint src test --ext .ts",
+    "lint:fix": "eslint src test --ext .ts --fix",
+    "format": "prettier --write src test"
+  },
+  "dependencies": {
+    "@sqltools/base-driver": "latest",
+    "@sqltools/types": "latest",
+    "@types/pg": "^8.15.6",
+    "pg": "^8.16.3",
+    "uuid": "^7.0.2",
+    "@aws/aurora-dsql-node-postgres-connector": "^0.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.130",
+    "@types/vscode": "^1.72.0",
+    "@types/glob": "^8.1.0",
+    "typescript": "^4.9.5",
+    "lodash": "^4.17.19",
+    "@vscode/test-electron": "^2.3.8",
+    "mocha": "^10.2.0",
+    "@types/mocha": "^10.0.6",
+    "glob": "^10.3.10",
+    "eslint": "^9.39.2",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "prettier": "^3.4.2"
+  }
+}

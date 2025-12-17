@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "database": {
+      "title": "Database",
+      "type": "string",
+      "minLength": 1,
+      "default": "postgres"
+    },
+    "username": {
+      "title": "Username",
+      "type": "string",
+      "minLength": 1
+    },
+    "region": {
+      "title": "AWS Region",
+      "type": "string"
+    },
+    "profile": {
+      "title": "AWS Profile",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "connectionMethod": {
+      "title": "Connect using",
+      "type": "string",
+      "minLength": 1,
+      "enum": [
+        "Server and Port",
+        "Connection String"
+      ],
+      "default": "Server and Port"
+    },
+    "pgOptions": {
+      "type": "object",
+      "title": "node-pg driver specific options",
+      "description": "You can get more info here: https://node-postgres.com/apis/pool",
+      "properties": {
+        "query_timeout": {
+          "type": "number"
+        },
+        "connectionTimeoutMillis": {
+          "type": "number"
+        },
+        "idleTimeoutMillis": {
+          "type": "number"
+        },
+        "max": {
+          "type": "number"
+        },
+        "ssl": {
+          "type": "object",
+          "title": "SSL Options (node.TLSSocket)",
+          "description": "Passed directly to node.TLSSocket. Check more here: https://nodejs.org/api/tls.html#tls_new_tls_tlssocket_socket_options",
+          "properties": {
+            "rejectUnauthorized": {
+              "type": "boolean",
+              "default": true
+            },
+            "ca": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "dependencies": {
+    "connectionMethod": {
+      "oneOf": [
+        {
+          "properties": {
+            "connectionMethod": {
+              "enum": [
+                "Server and Port"
+              ]
+            },
+            "server": {
+              "title": "DSQL Cluster",
+              "type": "string",
+              "minLength": 1
+            },
+            "port": {
+              "title": "Port",
+              "minimum": 1,
+              "default": 5432,
+              "type": "integer"
+            },
+            "database": {
+              "$ref": "#/definitions/database",
+              "default": "postgres"
+            },
+            "username": {
+              "$ref": "#/definitions/username"
+            },
+            "region": {
+              "$ref": "#/definitions/region"
+            },
+            "profile": {
+              "$ref": "#/definitions/profile"
+            }
+          },
+          "required": [
+            "server"
+          ]
+        },
+        {
+          "properties": {
+            "connectionMethod": {
+              "enum": [
+                "Connection String"
+              ]
+            },
+            "connectString": {
+              "title": "Connection String",
+              "type": "string",
+              "minLength": 1
+            },
+            "region": {
+              "$ref": "#/definitions/region"
+            },
+            "profile": {
+              "$ref": "#/definitions/profile"
+            }
+          },
+          "required": [
+            "connectString"
+          ]
+        }
+      ]
+    }
+  },
+  "required": ["connectionMethod"]
+}

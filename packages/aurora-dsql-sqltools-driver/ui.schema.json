@@ -1,0 +1,49 @@
+{
+  "ui:order": [
+    "connectionMethod",
+    "server",
+    "connectString",
+    "username",
+    "region",
+    "profile",
+    "port",
+    "database",
+    "pgOptions"
+  ],
+  "region": {
+    "ui:help": "AWS region where your DSQL cluster is located (e.g., us-east-1)"
+  },
+  "server": {
+    "ui:help": "DSQL cluster endpoint (e.g., cluster-id.dsql.region.on.aws) or DSQL cluster-id"
+  },
+  "username": {
+    "ui:help": "Database username. Default: admin"
+  },
+  "profile": {
+    "ui:help": "AWS profile name. If not specified, uses default profile"
+  },
+  "pgOptions": {
+    "ui:order": ["ssl", "*"],
+    "query_timeout": {
+      "ui:help": "Number of milliseconds before a query call will timeout. Default is no timeout"
+    },
+    "connectionTimeoutMillis": {
+      "ui:help": "Number of milliseconds to wait before timing out when connecting a new client. By default this is 0 which means no timeout"
+    },
+    "idleTimeoutMillis": {
+      "ui:help": "Number of milliseconds a client must sit idle in the pool and not be checked out before it is disconnected from the backend and discarded. Default is 10000 (10 seconds) - set to 0 to disable auto-disconnection of idle clients"
+    },
+    "max": {
+      "ui:help": "Maximum number of clients the pool should contain. By default this is set to 10."
+    },
+    "ssl": {
+      "rejectUnauthorized": {
+        "ui:help": "If true the server will reject any connection which is not authorized with the list of supplied CAs."
+      },
+      "ca": {
+        "ui:help": "Optionally override the trusted CA certificates. Default is to trust the well-known CAs curated by Mozilla. Mozilla's CAs are completely replaced when CAs are explicitly specified using this option.",
+        "ui:widget": "file"
+      }
+    }
+  }
+}
