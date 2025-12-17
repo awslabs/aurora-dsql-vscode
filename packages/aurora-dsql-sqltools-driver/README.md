@@ -1,2 +1,2 @@
-# SQLTools Aurora DSQL Driver
+# Aurora DSQL Driver for SQLTools
 
