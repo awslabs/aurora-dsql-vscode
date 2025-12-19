@@ -16,7 +16,9 @@
   "keywords": [
     "dsql",
     "sqltools-driver",
-    "Aurora DSQL"
+    "Aurora DSQL",
+    "postgres",
+    "postgresql"
   ],
   "categories": [
     "Programming Languages",
