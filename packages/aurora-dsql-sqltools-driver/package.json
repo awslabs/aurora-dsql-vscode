@@ -14,11 +14,16 @@
   },
   "bugs": {},
   "keywords": [
+    "aws",
     "dsql",
     "sqltools-driver",
     "Aurora DSQL",
+    "aurora",
+    "database",
+    "distributed",
     "postgres",
-    "postgresql"
+    "postgresql",
+    "serverless"
   ],
   "categories": [
     "Programming Languages",
