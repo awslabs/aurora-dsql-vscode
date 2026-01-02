@@ -15,7 +15,7 @@ export function run(): Promise<void> {
   const mocha = new Mocha({
     ui: 'tdd',
     color: true,
-    reporter: process.env.CI ? 'mocha-junit-reporter' : null,
+    reporter: null,
   });
 
   const testsRoot = path.resolve(__dirname, '..');
