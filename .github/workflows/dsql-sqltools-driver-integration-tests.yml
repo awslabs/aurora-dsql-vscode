@@ -65,23 +65,6 @@ jobs:
         working-directory: ./packages/aurora-dsql-sqltools-driver
         run: |
           npm ci
-      
-      - name: Install VSCode and xvfb
-        env:
-          DEBIAN_FRONTEND: noninteractive
-          TZ: America/Vancouver
-        run: |
-          sudo apt-get install wget gpg && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && install -D -o root -g root -m 644 microsoft.gpg /usr/share/keyrings/microsoft.gpg && rm -f microsoft.gpg
-          sudo tee /etc/apt/sources.list.d/vscode.sources << EOF
-          Types: deb
-          URIs: https://packages.microsoft.com/repos/code
-          Suites: stable
-          Components: main
-          Architectures: amd64,arm64,armhf
-          Signed-By: /usr/share/keyrings/microsoft.gpg
-          EOF
-          sudo apt install apt-transport-https && apt update && apt install code # or code-insiders
-          sudo apt install -y xvfb
 
       - name: Run tests
         working-directory: ./packages/aurora-dsql-sqltools-driver
