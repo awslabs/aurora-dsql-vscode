@@ -58,25 +58,25 @@
     "format": "prettier --write src test"
   },
   "dependencies": {
+    "@aws/aurora-dsql-node-postgres-connector": "^0.1.6",
     "@sqltools/base-driver": "latest",
     "@sqltools/types": "latest",
     "@types/pg": "^8.15.6",
     "pg": "^8.16.3",
-    "uuid": "^7.0.2",
-    "@aws/aurora-dsql-node-postgres-connector": "^0.1.6"
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.6",
     "@types/node": "^18.19.130",
     "@types/vscode": "^1.72.0",
-    "@types/glob": "^8.1.0",
-    "typescript": "^4.9.5",
-    "@vscode/test-electron": "^2.3.8",
-    "mocha": "^10.2.0",
-    "@types/mocha": "^10.0.6",
-    "glob": "^10.3.10",
-    "eslint": "^9.39.2",
     "@typescript-eslint/eslint-plugin": "^8.50.0",
     "@typescript-eslint/parser": "^8.50.0",
-    "prettier": "^3.4.2"
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^9.39.2",
+    "glob": "^10.3.10",
+    "mocha": "^11.7.5",
+    "prettier": "^3.4.2",
+    "typescript": "^4.9.5"
   }
 }
