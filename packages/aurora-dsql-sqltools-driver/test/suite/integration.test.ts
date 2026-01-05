@@ -18,8 +18,7 @@ suite("DSQL Driver Integration Tests", () => {
     const awsRegion = process.env.REGION;
 
     if (!clusterEndpoint) {
-      console.log("Skipping integration tests - CLUSTER_ENDPOINT not set");
-      return;
+      throw new Error("CLUSTER_ENDPOINT environment variable is required for integration tests");
     }
 
     console.log(`Using cluster: ${clusterEndpoint}, region: ${awsRegion}`);
@@ -42,10 +41,6 @@ suite("DSQL Driver Integration Tests", () => {
   });
 
   test("Connect to DSQL cluster", async function() {
-    if (!process.env.CLUSTER_ENDPOINT) {
-      this.skip();
-    }
-
     this.timeout(10000);
     await driver.open();
     assert.ok(driver.connection);
