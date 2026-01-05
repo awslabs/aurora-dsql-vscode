@@ -1,0 +1,82 @@
+{
+  "name": "sqltools-driver-dsql",
+  "displayName": "Aurora DSQL Driver for SQLTools",
+  "description": "Aurora DSQL Driver for SQLTools",
+  "version": "0.1.0",
+  "icon": "icons/dsqlicon.png",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "publisher": "amazonwebservices",
+  "license": "MIT-0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awslabs/aurora-dsql-vscode"
+  },
+  "bugs": {},
+  "keywords": [
+    "aws",
+    "dsql",
+    "sqltools-driver",
+    "Aurora DSQL",
+    "aurora",
+    "database",
+    "distributed",
+    "postgres",
+    "postgresql",
+    "serverless"
+  ],
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters",
+    "Other"
+  ],
+  "extensionDependencies": [
+    "mtxr.sqltools"
+  ],
+  "activationEvents": [
+    "*",
+    "onLanguage:sql",
+    "onCommand:sqltools.*"
+  ],
+  "main": "./out/src/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "watch:ext": "tsc -watch -p ./ --preserveWatchOutput",
+    "watch:ls": "tsc -watch -p ./ --preserveWatchOutput",
+    "clean": "rm -rf out dist *.vsix",
+    "test": "npm run compile && npm run run-test",
+    "test:unit": "npm run compile && TEST_SUITE=unit node ./out/test/runTest.js",
+    "test:integration": "npm run compile && TEST_SUITE=integration node ./out/test/runTest.js",
+    "run-test": "node ./out/test/runTest.js",
+    "test-with-sqltools": "npm run compile && node ./out/test/runTestWithSQLTools.js",
+    "lint": "eslint src test --ext .ts",
+    "lint:fix": "eslint src test --ext .ts --fix",
+    "format": "prettier --write src test"
+  },
+  "dependencies": {
+    "@aws/aurora-dsql-node-postgres-connector": "^0.1.6",
+    "@sqltools/base-driver": "latest",
+    "@sqltools/types": "latest",
+    "@types/pg": "^8.15.6",
+    "pg": "^8.16.3",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^18.19.130",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^8.50.0",
+    "@typescript-eslint/parser": "^8.50.0",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^9.39.2",
+    "glob": "^10.3.10",
+    "mocha": "^11.7.5",
+    "prettier": "^3.4.2",
+    "typescript": "^4.9.5"
+  }
+}
