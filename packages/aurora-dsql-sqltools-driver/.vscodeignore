@@ -9,3 +9,16 @@ src/**
 **/*.ts
 test/**
 *.vsix
+.DS_Store
+.prettierrc
+eslint.config.js
+package-lock.json
+Developer.md
+THIRD-PARTY-LICENSES.json
+node_modules/@typescript-eslint/**
+node_modules/@vscode/test-electron/**
+node_modules/eslint/**
+node_modules/glob/**
+node_modules/mocha/**
+node_modules/prettier/**
+node_modules/typescript/**
