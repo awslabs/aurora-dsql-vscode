@@ -1,5 +1,5 @@
 {
-  "name": "sqltools-driver-dsql",
+  "name": "aurora-dsql-driver-for-sqltools",
   "displayName": "Aurora DSQL Driver for SQLTools",
   "description": "Aurora DSQL Driver for SQLTools",
   "version": "0.1.0",
@@ -13,7 +13,8 @@
     "type": "git",
     "url": "https://github.com/awslabs/aurora-dsql-vscode"
   },
-  "bugs": {},
+  "bugs": {"url": "https://github.com/awslabs/aurora-dsql-vscode/issues"
+  },
   "keywords": [
     "aws",
     "dsql",
