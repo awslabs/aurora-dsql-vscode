@@ -36,14 +36,14 @@ jobs:
 
       - name: Package extension
         run: |
-          vsce package --allow-star-activation
+          npx vsce package --allow-star-activation
         working-directory: ./packages/aurora-dsql-sqltools-driver
 
       # Temporarily disabled for testing - remove 'if: false' to enable publishing
       - name: Publish to VS Code Marketplace
         if: false
         run: |
-          vsce publish -p ${{ secrets.MARKETPLACE_TOKEN }}
+          npx vsce publish -p ${{ secrets.MARKETPLACE_TOKEN }}
         working-directory: ./packages/aurora-dsql-sqltools-driver
 
       - name: Upload VSIX as artifact
