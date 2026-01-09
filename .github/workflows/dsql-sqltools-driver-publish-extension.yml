@@ -37,7 +37,7 @@ jobs:
         run: |
           cd packages/aurora-dsql-sqltools-driver
           npm install -g @vscode/vsce
-          vsce package
+          vsce package --allow-star-activation
 
       # Temporarily disabled for testing - remove 'if: false' to enable publishing
       - name: Publish to VS Code Marketplace
