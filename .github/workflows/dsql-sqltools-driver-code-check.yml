@@ -8,6 +8,7 @@ on:
       - '.github/workflows/dsql-sqltools-driver-code-check.yml'
   pull_request:
     branches: [ main ]
+    paths:
       - 'packages/aurora-dsql-sqltools-driver/**'
       - '.github/workflows/dsql-sqltools-driver-code-check.yml'
   # Give us a button to allow running the workflow on demand for testing.
