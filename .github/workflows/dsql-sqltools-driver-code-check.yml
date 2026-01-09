@@ -1,5 +1,8 @@
 name: Verify code formatting and linting for the Aurora DSQL Driver
 
+permissions:
+  contents: read
+
 on:
   push:
     branches: [ main ]
