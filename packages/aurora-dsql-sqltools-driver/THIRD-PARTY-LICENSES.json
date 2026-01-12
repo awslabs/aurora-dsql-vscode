@@ -111,18 +111,6 @@
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-clipboard/raw/master/LICENSE",
         "parents": "Code"
     },
-    "@xterm/addon-clipboard@0.3.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-clipboard",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-clipboard/raw/master/LICENSE",
-        "parents": "Code"
-    },
-    "@xterm/addon-image@0.10.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-image",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-image/raw/master/LICENSE",
-        "parents": "Code"
-    },
     "@xterm/addon-image@0.9.0-beta.136": {
         "licenses": "MIT",
         "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-image",
@@ -135,19 +123,7 @@
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-ligatures/raw/master/LICENSE",
         "parents": "Code"
     },
-    "@xterm/addon-ligatures@0.11.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-ligatures",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-ligatures/raw/master/LICENSE",
-        "parents": "Code"
-    },
     "@xterm/addon-progress@0.2.0-beta.42": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-progress",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-progress/raw/master/LICENSE",
-        "parents": "Code"
-    },
-    "@xterm/addon-progress@0.3.0-beta.91": {
         "licenses": "MIT",
         "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-progress",
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-progress/raw/master/LICENSE",
@@ -159,28 +135,10 @@
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-search/raw/master/LICENSE",
         "parents": "Code"
     },
-    "@xterm/addon-search@0.17.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-search",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-search/raw/master/LICENSE",
-        "parents": "Code"
-    },
     "@xterm/addon-serialize@0.14.0-beta.136": {
         "licenses": "MIT",
         "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-serialize",
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-serialize",
-        "parents": "Code"
-    },
-    "@xterm/addon-serialize@0.15.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-serialize",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-serialize",
-        "parents": "Code"
-    },
-    "@xterm/addon-unicode11@0.10.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-unicode11",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-unicode11/raw/master/LICENSE",
         "parents": "Code"
     },
     "@xterm/addon-unicode11@0.9.0-beta.136": {
@@ -195,31 +153,13 @@
         "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-webgl/raw/master/LICENSE",
         "parents": "Code"
     },
-    "@xterm/addon-webgl@0.20.0-beta.90": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-webgl",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/tree/master/addons/addon-webgl/raw/master/LICENSE",
-        "parents": "Code"
-    },
     "@xterm/headless@5.6.0-beta.136": {
         "licenses": "MIT",
         "repository": "https://github.com/xtermjs/xterm.js",
         "licenseUrl": "https://github.com/xtermjs/xterm.js",
         "parents": "Code"
     },
-    "@xterm/headless@6.1.0-beta.91": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js",
-        "parents": "Code"
-    },
     "@xterm/xterm@5.6.0-beta.136": {
-        "licenses": "MIT",
-        "repository": "https://github.com/xtermjs/xterm.js",
-        "licenseUrl": "https://github.com/xtermjs/xterm.js/raw/master/LICENSE",
-        "parents": "Code"
-    },
-    "@xterm/xterm@6.1.0-beta.91": {
         "licenses": "MIT",
         "repository": "https://github.com/xtermjs/xterm.js",
         "licenseUrl": "https://github.com/xtermjs/xterm.js/raw/master/LICENSE",
@@ -262,12 +202,6 @@
         "parents": "Code"
     },
     "node-pty@1.1.0-beta35": {
-        "licenses": "MIT",
-        "repository": "https://github.com/microsoft/node-pty",
-        "licenseUrl": "https://github.com/microsoft/node-pty/raw/master/LICENSE",
-        "parents": "Code"
-    },
-    "node-pty@1.1.0-beta43": {
         "licenses": "MIT",
         "repository": "https://github.com/microsoft/node-pty",
         "licenseUrl": "https://github.com/microsoft/node-pty/raw/master/LICENSE",
@@ -320,12 +254,6 @@
         "parents": "Code"
     },
     "vscode-textmate@9.2.1": {
-        "licenses": "MIT",
-        "repository": "https://github.com/microsoft/vscode-textmate",
-        "licenseUrl": "https://github.com/microsoft/vscode-textmate/raw/master/LICENSE.md",
-        "parents": "Code"
-    },
-    "vscode-textmate@9.3.0": {
         "licenses": "MIT",
         "repository": "https://github.com/microsoft/vscode-textmate",
         "licenseUrl": "https://github.com/microsoft/vscode-textmate/raw/master/LICENSE.md",
