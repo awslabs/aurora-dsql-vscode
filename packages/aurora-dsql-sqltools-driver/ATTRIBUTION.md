@@ -2,7 +2,8 @@
 
 This project is based on:
 - [SQLTools Driver Template](https://github.com/mtxr/vsc-sqltools-driver-template) by Matheus Teixeira
-  - License to Modifications: MIT
+  - License: MIT
+  - LicenseUrl: https://github.com/mtxr/vsc-sqltools-driver-template/blob/master/LICENSE.md
 - [SQLTools PostgreSQL Driver](https://github.com/mtxr/vscode-sqltools/tree/dev/packages/driver.pg) by Matheus Teixeira
   - License: MIT
   - LicenseUrl: https://github.com/mtxr/vscode-sqltools/blob/dev/LICENSE.md
