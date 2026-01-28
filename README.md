@@ -1,20 +1,45 @@
-## Aurora DSQL Extensions for VSCode
+# Aurora DSQL Tools
 
-[![GitHub](https://img.shields.io/badge/github-awslabs/aurora--dsql--vscode-blue?logo=github)](https://github.com/awslabs/aurora-dsql-vscode)
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/awslabs/aurora-dsql-vscode/blob/main/LICENSE)
+[![GitHub](https://img.shields.io/badge/github-awslabs/aurora--dsql--tools-blue?logo=github)](https://github.com/awslabs/aurora-dsql-tools)
 [![Discord chat](https://img.shields.io/discord/1435027294837276802.svg?logo=discord)](https://discord.com/invite/nEF6ksFWru)
 
-This repository contains [Amazon Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/) extensions for VSCode. Amazon Aurora DSQL is a distributed SQL database service that provides high availability and scalability for PostgreSQL-compatible applications.
+This monorepo contains developer tools for [Amazon Aurora DSQL](https://aws.amazon.com/rds/aurora/dsql/), AWS's serverless distributed SQL database.
 
-### Aurora DSQL Driver for SQLTools
+## Available Tools
 
-Aurora DSQL Driver for SQLTools is an extension for connecting to Amazon Aurora DSQL from VSCode. It was developed as driver for [SQLTools](https://github.com/mtxr/vscode-sqltools) and allows for seamless connection to Aurora DSQL.
+### VS Code Extensions
+
+| Package | Description | Marketplace |
+|---------|-------------|-------------|
+| [sqltools-driver](./vscode/sqltools-driver/) | SQLTools driver for Aurora DSQL | [![VS Marketplace](https://img.shields.io/visual-studio-marketplace/v/amazonwebservices.aurora-dsql-driver-for-sqltools)](https://marketplace.visualstudio.com/items?itemName=amazonwebservices.aurora-dsql-driver-for-sqltools) |
+
+### Database Migration Tools
+
+| Package | Description | Maven Central |
+|---------|-------------|---------------|
+| [flyway](./flyway/) | Flyway database support for Aurora DSQL | [![Maven Central](https://img.shields.io/maven-central/v/software.amazon.dsql/aurora-dsql-flyway-support)](https://central.sonatype.com/artifact/software.amazon.dsql/aurora-dsql-flyway-support) |
+
+## Documentation
+
+See the README in each tool's directory for detailed usage instructions:
+
+- [SQLTools Driver documentation](./vscode/sqltools-driver/README.md)
+- [Flyway support documentation](./flyway/README.md)
+
+## Versioning
+
+Each tool is versioned independently. Version numbers continue from their original standalone repositories to maintain backwards compatibility.
+
+## Contributing
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to contribute to this project.
 
 ## Security
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+See [CONTRIBUTING.md](./CONTRIBUTING.md#security-issue-notifications) for information on reporting security issues.
 
 ## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+Each package has its own license:
+- VS Code SQLTools Driver: [MIT-0](./vscode/sqltools-driver/LICENSE)
+- Flyway Support: [Apache-2.0](./flyway/LICENSE)
