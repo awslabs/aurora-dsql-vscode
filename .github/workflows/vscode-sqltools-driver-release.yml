@@ -27,6 +27,7 @@ defaults:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    environment: vscode
     permissions:
       contents: read
     steps:
