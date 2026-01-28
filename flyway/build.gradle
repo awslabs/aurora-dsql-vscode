@@ -80,13 +80,13 @@ publishing {
             pom {
                 name = 'Aurora DSQL Flyway Support'
                 description = 'Flyway database support for Amazon Aurora DSQL'
-                url = 'https://github.com/awslabs/aurora-dsql-orms'
+                url = 'https://github.com/awslabs/aurora-dsql-tools'
                 inceptionYear = '2025'
 
                 scm{
-                    url = 'https://github.com/awslabs/aurora-dsql-orms/tree/main'
-                    connection = 'scm:git:ssh://git@github.com/awslabs/aurora-dsql-orms.git'
-                    developerConnection = 'scm:git:ssh://git@github.com/awslabs/aurora-dsql-orms.git'
+                    url = 'https://github.com/awslabs/aurora-dsql-tools/tree/main'
+                    connection = 'scm:git:ssh://git@github.com/awslabs/aurora-dsql-tools.git'
+                    developerConnection = 'scm:git:ssh://git@github.com/awslabs/aurora-dsql-tools.git'
                 }
 
                 licenses {
